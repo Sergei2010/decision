@@ -98,10 +98,6 @@ body {
   border-top: 1px solid #2b689b;
 }
 
-/*.form-line:invalid {
-  border-top: 1px solid #f13f58;
-}*/
-
 .form-text {
   width: 170px;
   height: 22px;
@@ -112,11 +108,11 @@ body {
   margin-bottom: 30px;
 }
 
-.form-text b {
+.form-text span {
   margin-right: 8px;
 }
 
-.form-text b {
+.form-text span {
   color: #ffb6c1;
 }
 
@@ -154,7 +150,7 @@ body {
 }
 
 .form-error {
-  display: none;
+  opacity: 0;
   font-size: 15px;
   line-height: 140%;
   color: #f13f58;
@@ -163,8 +159,13 @@ body {
 }
 
 .form-error:invalid {
-  display: block;
+  opacity: 1;
 }
+
+.form-line:invalid {
+  border-top: 1px solid #f13f58;
+}
+
 @media (max-width: 414px) {
   .wrapper {
     max-width: 414px;

@@ -12,33 +12,47 @@
 
     <div class="wrapper">
       <form class="form" novalidate>
+
+    <!-- LOGO -->
         <div class="form-logo"></div>
         <h2>Изменение пароля</h2>
+
+    <!-- EMAIL / LOGIN -->
         <p class="form-input">
           <img src="images/asterisk.svg" alt="asterisk">
-          <input type="text" placeholder="Email / Логин" required/>
+          <input id="email" type="text" placeholder="Email / Логин" required/>
           <hr class="form-line">
-          <p class="form-error">Неверный формат email</p>
+          <span class="form-error">Неверный формат email</span>
         </p>
+
+    <!-- CONTROL STRING -->
         <p class="form-input">
           <img src="images/asterisk.svg" alt="asterisk">
           <input type="text" placeholder="Контрольная строка" required/>
           <hr class="form-line">
-          <p class="form-error">Неверное контрольное слово</p>
+          <span class="form-error">Неверное контрольное слово</span>
         </p>
+
+    <!-- PASSWORD -->
         <p class="form-input">
           <img src="images/asterisk.svg" alt="asterisk">
           <input type="password" placeholder="Новый пароль" required/>
           <hr class="form-line">
-          <p class="form-error">Пароль должен быть не менее 6 символов</p>
+          <span class="form-error">Пароль должен быть не менее 6 символов</span>
         </p>
+
+    <!-- PASSWORD CONFIRMATION -->
         <p class="form-input">
           <img src="images/asterisk.svg" alt="asterisk">
           <input type="password" placeholder="Подтверждение пароля" required/>
           <hr class="form-line">
-          <p class="form-error">Пароли не совпадают</p>
+          <span class="form-error">Пароли не совпадают</span>
         </p>
-        <p class="form-text"><b>*</b>Обязательное поле</p>
+
+    <!-- TEXT -->
+        <p class="form-text"><span>*</span>Обязательное поле</p>
+
+    <!-- BUTTONS -->
         <button type="button">
           <p>Изменить пароль</p>
             <img src="./images/arrow.svg" alt="arrow" width="31px">
@@ -46,7 +60,8 @@
         <p class="form-reg">
           <button type="submit">Зарегистрироваться</button>
           <button type="submit">Войти</button>
-        </p>       
+        </p>
+
       </form>
     </div>
 
