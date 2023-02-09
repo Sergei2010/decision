@@ -165,6 +165,7 @@ body {
 .form-error:invalid {
   display: block;
 }
+
 @media (max-width: 414px) {
   .wrapper {
     max-width: 414px;
