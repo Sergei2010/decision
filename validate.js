@@ -1,20 +1,20 @@
 // @ts-nocheck
 // Существуют разные способы получить DOM-узел; здесь мы определяем саму форму и
-// поле ввода email и элемент span, в который поместим сообщение об ошибке
+// поле ввода email и элемент p, в который поместим сообщение об ошибке
 const form = document.getElementsByTagName('form')[0];
 
-const password = document.getElementById('password');
-const passwordError = document.querySelector('#password + span.error');
+const email = document.getElementById('email');
+const emailError = document.querySelector('#password + p.error');
 
-password.addEventListener('input', function (event) {
+email.addEventListener('input', function (event) {
 	// Каждый раз, когда пользователь что-то вводит,
 	// мы проверяем, являются ли поля формы валидными
 
-	if (password.validity.valid) {
+	if (email.validity.valid) {
 		// Если на момент валидации какое-то сообщение об ошибке уже отображается,
 		// если поле валидно, удаляем сообщение
-		passwordError.textContent = ''; // Сбросить содержимое сообщения
-		passwordError.className = 'error'; // Сбросить визуальное состояние сообщения
+		emailError.textContent = ''; // Сбросить содержимое сообщения
+		emailError.className = 'error'; // Сбросить визуальное состояние сообщения
 	} else {
 		// Если поле не валидно, показываем правильную ошибку
 		showError();
@@ -33,20 +33,20 @@ form.addEventListener('submit', function (event) {
 });
 
 function showError() {
-	if (password.validity.valueMissing) {
+	if (email.validity.valueMissing) {
 		// Если поле пустое,
 		// отображаем следующее сообщение об ошибке
-		passwordError.textContent = 'Необходимо ввести пароль';
-	} else if (password.validity.typeMismatch) {
+		emailError.textContent = 'Необходимо ввести email';
+	} else if (email.validity.typeMismatch) {
 		// Если поле содержит не email-адрес,
 		// отображаем следующее сообщение об ошибке
-		emailError.textContent = 'Пароль должен быть не менее 6 символов';
+		emailError.textContent = 'Email имеет не валидный тип';
 	} else if (email.validity.tooShort) {
 		// Если содержимое слишком короткое,
 		// отображаем следующее сообщение об ошибке
-		passwordError.textContent = `Пароль должен содержать  ${password.minLength} characters; Вы ввели ${password.value.length}.`;
+		emailError.textContent = `Пароль должен содержать  ${email.minLength} characters; Вы ввели ${email.value.length}.`;
 	}
 
 	// Задаём соответствующую стилизацию
-	passwordError.className = 'error active';
+	emailError.className = 'error active';
 }
