@@ -11,7 +11,7 @@
   <body>
 
     <div class="wrapper">
-      <form class="form" novalidate>
+      <form class="form">
 
     <!-- LOGO -->
         <div class="form-logo"></div>
@@ -36,7 +36,7 @@
     <!-- PASSWORD -->
         <p class="form-input">
           <img src="images/asterisk.svg" alt="asterisk">
-          <input type="password" placeholder="Новый пароль" required/>
+          <input type="password" placeholder="Новый пароль" minlength="6" maxlength="15" required/>
           <hr class="form-line">
           <span class="form-error">Пароль должен быть не менее 6 символов</span>
         </p>
@@ -65,6 +65,82 @@
       </form>
     </div>
 
+
+<!-- ANOTHER PAGE -->
+
+    <div class="wrapper">
+      <form action="" class="form" id="add-form" novalidate>
+
+    <!-- LOGO -->
+        <div class="form-logo"></div>
+        <h2>Изменение пароля</h2>
+        
+    <!-- EMAIL / LOGIN WITH UL -->
+    <div class="form-ul">
+      <ul>
+        <li class="first-item input-box">
+          <input id="email" type="email" placeholder="Email / Логин" contenteditable required/>
+        </li>
+        <li><hr></li>
+        <li class="form-error">Неверный формат email</li>
+      </ul>
+    </div>
+    <!-- EMAIL / LOGIN WITH UL -->
+
+    <!-- CONTROL STRING WITH UL -->
+    <div class="form-ul">
+      <ul>
+        <li class="first-item input-box">
+          <input type="text" placeholder="Контрольная строка" required/>
+        </li>
+        <li><hr></li>
+        <li class="form-error">Неверное контрольное слово</li>
+      </ul>
+    </div>
+    <!-- CONTROL STRING WITH UL -->
+      
+
+    <!-- PASSWORD WITH UL -->
+    <div class="form-ul">
+      <ul>
+        <li class="first-item input-box">
+          <input type="password" placeholder="Новый пароль" minlength="6" maxlength="15" required/>
+        </li>
+        <li><hr></li>
+        <li class="form-error">Пароль должен содержать не менее 6 символов</li>
+      </ul>
+    </div>
+    <!-- PASSWORD WITH UL -->
+        
+    <!-- PASSWORD CONFIRMATION WITH UL -->
+    <div class="form-ul">
+      <ul>
+        <li class="first-item input-box">
+          <input type="password" placeholder="Подтверждение пароля" minlength="6" maxlength="15" required/>
+        </li>
+        <li><hr></li>
+        <li class="form-error">Пароли не совпадают</li>
+      </ul>
+    </div>
+    <!-- PASSWORD CONFIRMATION WITH UL -->
+        
+
+    <!-- TEXT -->
+    <p class="form-text"><span>*</span>Обязательное поле</p>
+
+    <!-- BUTTONS -->
+        <button type="submit">
+          <p>Изменить пароль</p>
+            <img src="./images/arrow.svg" alt="arrow" width="31px">
+        </button>
+        <p class="form-reg">
+          <button type="submit">Зарегистрироваться</button>
+          <button type="submit">Войти</button>
+        </p>
+
+      </form>
+    </div>
+
   </body>
-  <script src="validate.js"></script>
+  <script defer src="js/index.js"></script>
 </html>
