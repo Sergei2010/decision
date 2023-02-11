@@ -243,14 +243,14 @@ body {
   transition: opacity 0.7s ease;
 }
 
+.form-error-show {
+  opacity: 1;
+}
+
 .form-ul li input[type='password'] {
   background: url('images/ph_eye-closed-duotone.svg') no-repeat;
   background-size: 24px 24px;
   background-position: 91.5% 44%;
-}
-
-.form-error-show {
-  opacity: 1;
 }
 
 /*-- END STYLES WITH UL --*/
