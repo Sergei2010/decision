@@ -9,138 +9,87 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
-    <div class="wrapper">
-      <form class="form">
-
-    <!-- LOGO -->
-        <div class="form-logo"></div>
-        <h2>Изменение пароля</h2>
-
-    <!-- EMAIL / LOGIN -->
-        <p class="form-input">
-          <img src="images/asterisk.svg" alt="asterisk">
-          <input id="email" type="text" placeholder="Email / Логин" required/>
-          <hr class="form-line">
-          <span class="form-error">Неверный формат email</span>
-        </p>
-
-    <!-- CONTROL STRING -->
-        <p class="form-input">
-          <img src="images/asterisk.svg" alt="asterisk">
-          <input type="text" placeholder="Контрольная строка" required/>
-          <hr class="form-line">
-          <span class="form-error">Неверное контрольное слово</span>
-        </p>
-
-    <!-- PASSWORD -->
-        <p class="form-input">
-          <img src="images/asterisk.svg" alt="asterisk">
-          <input type="password" placeholder="Новый пароль" minlength="6" maxlength="15" required/>
-          <hr class="form-line">
-          <span class="form-error">Пароль должен быть не менее 6 символов</span>
-        </p>
-
-    <!-- PASSWORD CONFIRMATION -->
-        <p class="form-input">
-          <img src="images/asterisk.svg" alt="asterisk">
-          <input type="password" placeholder="Подтверждение пароля" required/>
-          <hr class="form-line">
-          <span class="form-error">Пароли не совпадают</span>
-        </p>
-
-    <!-- TEXT -->
-        <p class="form-text"><span>*</span>Обязательное поле</p>
-
-    <!-- BUTTONS -->
-        <button type="button">
-          <p>Изменить пароль</p>
-            <img src="./images/arrow.svg" alt="arrow" width="31px">
-        </button>
-        <p class="form-reg">
-          <button type="submit">Зарегистрироваться</button>
-          <button type="submit">Войти</button>
-        </p>
-
-      </form>
-    </div>
-
-
-<!-- ANOTHER PAGE -->
-
     <div class="wrapper">
       <form action="" class="form" id="add-form" novalidate>
-
-    <!-- LOGO -->
+        <!-- LOGO -->
         <div class="form-logo"></div>
         <h2>Изменение пароля</h2>
-        
-    <!-- EMAIL / LOGIN WITH UL -->
-    <div class="form-ul">
-      <ul>
-        <li class="first-item input-box">
-          <input id="email" type="email" placeholder="Email / Логин" contenteditable required/>
-        </li>
-        <li><hr></li>
-        <li class="form-error">Неверный формат email</li>
-      </ul>
-    </div>
-    <!-- EMAIL / LOGIN WITH UL -->
+        <!-- EMAIL / LOGIN WITH UL -->
+        <div class="form-ul">
+          <ul>
+            <li class="first-item input-box">
+              <input id="email" type="email" placeholder="Email / Логин" contenteditable required />
+            </li>
+            <li><hr /></li>
+            <li class="form-error">Неверный формат email</li>
+          </ul>
+        </div>
+        <!-- EMAIL / LOGIN WITH UL -->
 
-    <!-- CONTROL STRING WITH UL -->
-    <div class="form-ul">
-      <ul>
-        <li class="first-item input-box">
-          <input type="text" placeholder="Контрольная строка" required/>
-        </li>
-        <li><hr></li>
-        <li class="form-error">Неверное контрольное слово</li>
-      </ul>
-    </div>
-    <!-- CONTROL STRING WITH UL -->
-      
+        <!-- CONTROL STRING WITH UL -->
+        <div class="form-ul">
+          <ul>
+            <li class="first-item input-box">
+              <input type="text" placeholder="Контрольная строка" required />
+            </li>
+            <li><hr /></li>
+            <li class="form-error">Неверное контрольное слово</li>
+          </ul>
+        </div>
+        <!-- CONTROL STRING WITH UL -->
 
-    <!-- PASSWORD WITH UL -->
-    <div class="form-ul">
-      <ul>
-        <li class="first-item input-box">
-          <input type="password" placeholder="Новый пароль" minlength="6" maxlength="15" required/>
-        </li>
-        <li><hr></li>
-        <li class="form-error">Пароль должен содержать не менее 6 символов</li>
-      </ul>
-    </div>
-    <!-- PASSWORD WITH UL -->
-        
-    <!-- PASSWORD CONFIRMATION WITH UL -->
-    <div class="form-ul">
-      <ul>
-        <li class="first-item input-box">
-          <input type="password" placeholder="Подтверждение пароля" minlength="6" maxlength="15" required/>
-        </li>
-        <li><hr></li>
-        <li class="form-error">Пароли не совпадают</li>
-      </ul>
-    </div>
-    <!-- PASSWORD CONFIRMATION WITH UL -->
-        
+        <!-- PASSWORD WITH UL -->
+        <div class="form-ul">
+          <ul>
+            <li class="first-item input-box">
+              <input
+                type="password"
+                placeholder="Новый пароль"
+                minlength="6"
+                maxlength="15"
+                required
+              />
+            </li>
+            <li><hr /></li>
+            <li class="form-error">Пароль должен содержать не менее 6 символов</li>
+          </ul>
+        </div>
+        <!-- PASSWORD WITH UL -->
 
-    <!-- TEXT -->
-    <p class="form-text"><span>*</span>Обязательное поле</p>
+        <!-- PASSWORD CONFIRMATION WITH UL -->
+        <div class="form-ul">
+          <ul>
+            <li class="first-item input-box">
+              <input
+                type="password"
+                placeholder="Подтверждение пароля"
+                minlength="6"
+                maxlength="15"
+                required
+              />
+            </li>
+            <li><hr /></li>
+            <li class="form-error">Пароли не совпадают</li>
+          </ul>
+        </div>
+        <!-- PASSWORD CONFIRMATION WITH UL -->
 
-    <!-- BUTTONS -->
+        <!-- TEXT -->
+        <p class="form-text"><span>*</span>Обязательное поле</p>
+        <!-- TEXT -->
+
+        <!-- BUTTONS -->
         <button type="submit">
           <p>Изменить пароль</p>
-            <img src="./images/arrow.svg" alt="arrow" width="31px">
+          <img src="./images/arrow.svg" alt="arrow" width="31px" />
         </button>
         <p class="form-reg">
           <button type="submit">Зарегистрироваться</button>
           <button type="submit">Войти</button>
         </p>
-
+        <!-- BUTTONS -->
       </form>
     </div>
-
   </body>
   <script defer src="js/index.js"></script>
 </html>
