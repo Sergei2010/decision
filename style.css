@@ -48,83 +48,6 @@ body {
   color: #2b689b;
 }
 
-.form-input {
-  width: 400px;
-  height: 36px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.form-input p {
-  width: 24px;
-  height: 24px;
-}
-
-.form-input img {
-  width: 9px;
-  height: 9px;
-  margin-right: 10px;
-}
-
-.form-input input {
-  width: 400px;
-  height: 36px;
-  border: none;
-  font-size: 18px;
-  line-height: 25.2px;
-  color: #292a2c;
-}
-
-.form-input input:focus {
-  outline: none;
-}
-
-.form-input input[type='password'] {
-  background: url('images/ph_eye-closed-duotone.svg') no-repeat;
-  background-size: 24px 24px;
-  background-position: 100% 50%;
-}
-
-.form-input input::-webkit-input-placeholder {
-  font-size: 18px;
-  line-height: 140%;
-  color: #2b689b;
-}
-
-.form-input input::-moz-placeholder {
-  font-size: 18px;
-  line-height: 140%;
-  color: #2b689b;
-}
-
-.form-input input:-ms-input-placeholder {
-  font-size: 18px;
-  line-height: 140%;
-  color: #2b689b;
-}
-
-.form-input input::placeholder {
-  font-size: 18px;
-  line-height: 140%;
-  color: #2b689b;
-}
-
-.form-line {
-  width: 400px;
-  margin: 10px auto 5px;
-  padding: 0;
-  height: 0;
-  border: 0;
-}
-
 .form-text {
   width: 170px;
   height: 22px;
@@ -179,22 +102,27 @@ body {
   cursor: url(images/cursor.png), pointer;
 }
 
-/* .form-error {
-  font-size: 15px;
-  line-height: 140%;
-  color: #f13f58;
-  margin-left: 61px;
-  margin-bottom: 30px;
-  display: block;
-} */
-
 /*-- START STYLES WITH UL --*/
+.form-ul:nth-child(3),
+.form-ul:nth-child(4),
+.form-ul:nth-child(5) {
+  margin-bottom: 40px;
+}
+
+.form-ul:nth-child(6) {
+  margin-bottom: 30px;
+}
+
 .form-ul {
   width: 400px;
   margin: 0 auto;
 }
+.form-ul:last-child {
+  margin: 0 auto 30px;
+}
 
 .form-ul ul {
+  margin: 0;
   list-style-type: none;
   padding-left: 0;
 }
@@ -238,13 +166,14 @@ body {
   line-height: 140%;
   color: #f13f58;
   text-indent: 1em;
-  margin-bottom: 30px;
   opacity: 0;
-  transition: opacity 0.7s ease;
+  visibility: hidden;
+  transition: 0.55s opacity, 0.55s visibility;
 }
 
 .form-error-show {
   opacity: 1;
+  visibility: visible;
 }
 
 .form-ul li input[type='password'] {
