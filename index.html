@@ -18,10 +18,10 @@
         <div class="form-ul">
           <ul>
             <li class="first-item input-box">
-              <input id="email" type="email" placeholder="Email / Логин" contenteditable required />
+              <input id="email" type="email" placeholder="Email / Логин" data-required="true" />
             </li>
             <li><hr /></li>
-            <li class="form-error">Неверный формат email</li>
+            <li class="form-error"></li>
           </ul>
         </div>
         <!-- EMAIL / LOGIN WITH UL -->
@@ -30,10 +30,10 @@
         <div class="form-ul">
           <ul>
             <li class="first-item input-box">
-              <input type="text" placeholder="Контрольная строка" required />
+              <input type="text" placeholder="Контрольная строка" />
             </li>
             <li><hr /></li>
-            <li class="form-error">Неверное контрольное слово</li>
+            <li class="form-error"></li>
           </ul>
         </div>
         <!-- CONTROL STRING WITH UL -->
@@ -43,15 +43,16 @@
           <ul>
             <li class="first-item input-box">
               <input
+                id="pswd1"
                 type="password"
                 placeholder="Новый пароль"
-                minlength="6"
-                maxlength="15"
-                required
+                data-required="true"
+                data-max-length="15"
+                data-min-length="6"
               />
             </li>
             <li><hr /></li>
-            <li class="form-error">Пароль должен содержать не менее 6 символов</li>
+            <li class="form-error"></li>
           </ul>
         </div>
         <!-- PASSWORD WITH UL -->
@@ -61,15 +62,14 @@
           <ul>
             <li class="first-item input-box">
               <input
+                id="pswd2"
                 type="password"
                 placeholder="Подтверждение пароля"
-                minlength="6"
-                maxlength="15"
-                required
+                data-compare="true"
               />
             </li>
             <li><hr /></li>
-            <li class="form-error">Пароли не совпадают</li>
+            <li class="form-error"></li>
           </ul>
         </div>
         <!-- PASSWORD CONFIRMATION WITH UL -->
